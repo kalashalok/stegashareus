@@ -1,4 +1,4 @@
-# Stegashaurus 🦕
+# Stegashareus 🦕
 
 **Covert, Loss-Resistant Seed Phrase Storage in Plain Sight**  
 *Submitted as an open-source project for the Boss Battle Hackathon.*
@@ -23,7 +23,7 @@ Storing cryptographic seed phrases (such as 24-word BIP-39 lists) on paper, meta
 
 While standard file encryption protects payload contents, the existence of an encrypted file container alerts an attacker that valuable assets exist. Traditional steganography tools attempt to hide data within fine image details (such as LSB modifications or EXIF metadata), but these are instantly wiped when processed by messaging app pipelines (e.g., WhatsApp, Signal, Discord).
 
-**Stegashaurus** solves this by embedding encrypted data directly across spatial macro-blocks ($8 \times 8$ pixel regions) using robust error correction, enabling hidden payloads to survive lossy social media re-compression while maintaining full plausible deniability.
+**Stegashareus** solves this by embedding encrypted data directly across spatial macro-blocks ($8 \times 8$ pixel regions) using robust error correction, enabling hidden payloads to survive lossy social media re-compression while maintaining full plausible deniability.
 
 ---
 
@@ -63,18 +63,18 @@ An honest evaluation of engineering trade-offs made during development:
 
 ## ⚙️ Installation & Clean-Machine Setup
 
-Follow these instructions to install and run Stegashaurus on a fresh Debian/Ubuntu/Linux Mint system.
+Follow these instructions to install and run Stegashareus on a fresh Debian/Ubuntu/Linux Mint system.
 
 ## Installation
 
 ### Option 1: 1-Click Installation (Debian / Ubuntu / Linux Mint)
 
-Download the latest `.deb` package from the [Releases](https://github.com/kalashalok/stegashaurus/releases) page and install it using `apt`:
+Download the latest `.deb` package from the [Releases](https://github.com/kalashalok/stegashareus/releases) page and install it using `apt`:
 
 ```bash
 sudo apt update
 sudo apt install ./robust-stego-app.deb
-stegashaurus
+stegashareus
 ```
 
 
@@ -87,8 +87,8 @@ Prerequisites
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/kalashalok/stegashaurus.git
-cd stegashaurus
+git clone https://github.com/kalashalok/stegashareus.git
+cd stegashareus
 
 # 2. Install dependencies
 pip install -r requirements.txt
@@ -98,7 +98,7 @@ python3 src/main.py
 ```
 ## 🧪 How to Exercise (Happy Path Test)
 
-1. **Launch the Application:** Open Stegashaurus using `stegashaurus` or `python3 src/gui.py`.
+1. **Launch the Application:** Open Stegashareus using `stegashareus` or `python3 src/main.py`.
 2. **Embed Payload:**
    * Select a standard photo (`.jpg`).
    * Enter your 24-word BIP-39 seed phrase in the payload field.
@@ -107,7 +107,7 @@ python3 src/main.py
    * Send the output JPEG image over **WhatsApp** or **Signal** (standard photo attachment).
    * Download the received photo on the destination device.
 4. **Extract Payload:**
-   * Load the downloaded image into Stegashaurus under the **Extract** tab.
+   * Load the downloaded image into Stegashareus under the **Extract** tab.
    * Enter the passphrase used during embedding and click **Extract Data**.
    * The seed phrase will decrypt and display cleanly.
 
