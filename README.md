@@ -1,7 +1,7 @@
 # Stegashaurus 🦕
 
 **Covert, Loss-Resistant Seed Phrase Storage in Plain Sight**  
-*Submitted as an open-source project for the Bitcoin Open Source Hackathon.*
+*Submitted as an open-source project for the Boss Battle Hackathon.*
 
 ---
 
