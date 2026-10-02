@@ -94,7 +94,7 @@ cd stegashaurus
 pip install -r requirements.txt
 
 # 3. Run the PyQt6 application GUI
-python3 src/gui.py
+python3 src/main.py
 ```
 ## 🧪 How to Exercise (Happy Path Test)
 
