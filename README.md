@@ -54,6 +54,18 @@ To prove the real-world robustness of Stegashareus, a live adversarial field tes
 
 > **In a world where digital assets grow more valuable by the day, storing them carelessly carries catastrophic risk. Stegashareus ensures your sovereignty remains truly private, portable, and undeniable.**
 
+### 🔗 Cryptographic Proof & Verifiable Test Case
+
+To make this field test completely verifiable by judges and security researchers, the bounty wallet details, sample image, and on-chain proof are provided below:
+
+* **Funding TxID:** `70a6d9970713dffa74ea539662bad0a418dab9983e65ec49faa89c253ca20403` *(View on [Mempool.space](https://mempool.space/tx/70a6d9970713dffa74ea539662bad0a418dab9983e65ec49faa89c253ca20403))*
+* **Target Bitcoin Address:** `bc1qncyrwamn9ff0lllpjfw6a9x74mvzqplu7d6a8p`
+* **Sample Stego-Image:** `https://github.com/kalashalok/stegashareus/blob/main/stego_output37.jpg`
+* **Test Passphrase:** `#Kalashalok-Stegashareus@BitshalaBOSSBattle2026`
+* **Embedded BIP-39 Seed Phrase:**
+  ```text
+  unit smart garment goddess nominee news wreck goose vanish topple girl pyramid version story remind world upon fruit tail renew toddler label gasp ankle
+
 ---
 
 ## 🛠️ Architecture & Technical Approach
