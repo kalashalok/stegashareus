@@ -17,13 +17,34 @@
 
 ---
 
-## 💡 What Problem It Solves
+## 💡 Why Stegashareus? (Problem & Solution)
 
-Storing cryptographic seed phrases (such as 24-word BIP-39 lists) on paper, metal plates, or unencrypted text files leaves users vulnerable to physical theft, targeted searches, and social engineering.
+### The Problem: Your Life Savings in a "Transparent Safe"
 
-While standard file encryption protects payload contents, the existence of an encrypted file container alerts an attacker that valuable assets exist. Traditional steganography tools attempt to hide data within fine image details (such as LSB modifications or EXIF metadata), but these are instantly wiped when processed by messaging app pipelines (e.g., WhatsApp, Signal, Discord).
+Bitcoin gives individuals complete financial sovereignty, but managing seed phrases (24-word BIP-39 lists) remains a critical single point of failure. Traditional backup methods create distinct, identifiable targets:
 
-**Stegashareus** solves this by embedding encrypted data directly across spatial macro-blocks ($8 \times 8$ pixel regions) using robust error correction, enabling hidden payloads to survive lossy social media re-compression while maintaining full plausible deniability.
+* **Paper & Metal Backups:** Leaving a steel plate or paper seed backup in your home is the digital equivalent of putting your entire life savings inside a safe with a transparent door, placed right in your living room with a sign that says *"Valuable items inside, please break in."*
+* **Standard File Encryption:** Encrypting a file on your computer or cloud storage protects the contents, but the encrypted container itself signals to an observer or intruder that high-value assets exist. 
+* **Physical & Political Vulnerability:** History repeatedly shows that during geopolitical turmoil, banking collapses, or sudden forced displacement, people are forced to flee with nothing but the clothes on their backs. Carrying physical seed plates through checkpoints, borders, or hostile territory invites confiscation, extortion, or physical coercion.
+
+Relying on memory alone is fragile. Relying on conspicuous physical backups leaves you exposed.
+
+---
+
+### The Solution: Plausible Deniability & Loss-Resistant Steganography
+
+**Stegashareus** transforms ordinary digital photos into covert, resilient vaults for your critical cryptographic keys.
+
+#### 1. Hide in Plain Sight (Plausible Deniability)
+Instead of creating a suspicious encrypted archive, Stegashareus embeds your encrypted seed phrase directly into the spatial pixel matrix ($8 \times 8$ macro-blocks) of a standard JPEG. To any observer, inspector, or automated system, your backup looks like an ordinary vacation photo or family portrait sitting peacefully in your photo album.
+
+#### 2. Decentralized, Borderless Cloud Backups
+Because Stegashareus uses custom spatial embedding combined with Reed-Solomon Error Correction (ECC), your stego-images survive the lossy JPEG re-compression applied by messaging platforms and cloud storage pipelines (WhatsApp, Signal, Telegram, Discord, Google Photos etc.). You can upload a photo to a public channel or message it to yourself as a passive, redundant backup available anywhere in the world.
+
+#### 3. Absolute Uniformity Against Interrogation
+Extracting data requires both the image and the correct passphrase. The extraction engine executes identical logic across all runs: attempting to extract data from a plain, unaltered JPEG or using an incorrect passphrase returns an identical, generic error output (`"Error: Could not extract any valid data with that passphrase"`). There are no mathematical artifacts or structural cues left behind to prove a payload even exists.
+
+> **In a world where digital assets grow more valuable by the day, storing them carelessly carries catastrophic risk. Stegashareus ensures your sovereignty remains truly private, portable, and undeniable.**
 
 ---
 
