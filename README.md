@@ -44,6 +44,14 @@ Because Stegashareus uses custom spatial embedding combined with Reed-Solomon Er
 #### 3. Absolute Uniformity Against Interrogation
 Extracting data requires both the image and the correct passphrase. The extraction engine executes identical logic across all runs: attempting to extract data from a plain, unaltered JPEG or using an incorrect passphrase returns an identical, generic error output (`"Error: Could not extract any valid data with that passphrase"`). There are no mathematical artifacts or structural cues left behind to prove a payload even exists.
 
+### 🎯 Field-Tested in the Wild: The 10,000 Sat Bounty Challenge
+
+To prove the real-world robustness of Stegashareus, a live adversarial field test was conducted prior to release:
+
+* **The Challenge:** A live Bitcoin wallet seed phrase containing **10,000 sats** was embedded directly into an image using Stegashareus.
+* **Public Distribution:** The stego-image was posted publicly across **X (Twitter), Discord, and Signal** with explicit public announcements that a funded wallet was hidden inside.
+* **The Result:** Despite active exposure to hundreds of users, researchers, and automated tools for over a week and passing through the aggressive image compression pipelines of major social platforms, **the bounty remained unclaimed and uncracked.**
+
 > **In a world where digital assets grow more valuable by the day, storing them carelessly carries catastrophic risk. Stegashareus ensures your sovereignty remains truly private, portable, and undeniable.**
 
 ---
