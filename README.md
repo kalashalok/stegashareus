@@ -108,6 +108,18 @@ Follow these instructions to install and run Stegashareus on a fresh Debian/Ubun
 
 ## Installation
 
+📥 Installation & Usage (Tails OS)
+
+    Download: Download stegashareus_tailsos.zip from your GitHub Releases page onto a USB drive.
+
+    Transfer: Boot into Tails OS, plug in the USB, and copy stegashareus_tailsos.zip into the /home/amnesia/ folder.
+
+    Extract: Right-click stegashareus_tailsos.zip and select "Extract Here". A folder named main will appear.
+
+    Launch: Open the main folder, right-click run.sh, and select "Run as a Program".
+
+The steganography tool interface will immediately launch offline with zero terminal commands required.
+
 ### Option 1: 1-Click Installation (Debian / Ubuntu / Linux Mint)
 
 Download the latest `.deb` package from the [Releases](https://github.com/kalashalok/stegashareus/releases) page and install it using `apt`:
