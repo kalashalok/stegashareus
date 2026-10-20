@@ -120,6 +120,14 @@ Follow these instructions to install and run Stegashareus on a fresh Debian/Ubun
 
 The steganography tool interface will immediately launch offline with zero terminal commands required.
 
+This release provides a fully self-contained, portable build of Stegashareus optimized for strict air-gapped environments and Tails OS. It bundles all required C++ binaries, graphical drivers, and Python dependencies so it can run completely offline without needing apt installations or terminal compilation.
+✨ What's Included
+
+    Standalone PyQt6 GUI: Complete graphical user interface with all rendering plugins pre-loaded.
+    Full Dependency Bundle: Bundles Python runtime, NumPy, Pillow, OpenCV (cv2), Reed-Solomon error correction (reedsolo), and Cryptography.
+    Zero-Terminal Launcher: Includes an automated run.sh wrapper script that handles execution permissions and local library paths (LD_LIBRARY_PATH) automatically.
+
+
 ### Option 1: 1-Click Installation (Debian / Ubuntu / Linux Mint)
 
 Download the latest `.deb` package from the [Releases](https://github.com/kalashalok/stegashareus/releases) page and install it using `apt`:
